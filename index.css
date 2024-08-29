@@ -6,11 +6,19 @@ body{
     flex-direction: column;
     height: 100vh;
 }
-header{
+.desktop{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+}
+.mobile{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content:space-evenly;
+    
+  
 }
 .nav-ell{
     text-decoration: none;
@@ -18,6 +26,8 @@ header{
 }
 .bi{
     padding: 10px;
+    
+  
 }
 .a{
     color: red;
@@ -90,3 +100,19 @@ background-color:rgba(128, 128, 128, 0.034);
     margin-bottom: 90px;
     margin-top: 50px;
  }
+ @media only screen and (max-width: 750px) {
+    body {
+      background-color: lightblue;
+    }
+    .desktop{
+        display: none;
+        
+    }
+    .mobile{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+  }
+  
